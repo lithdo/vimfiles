@@ -52,4 +52,4 @@ endif
 "" 支持中文编码
 "" 参考http://edyfox.codecarver.org/html/vim_fileencodings_detection.html
 set fileencodings=ucs-bom,utf-8,gb18030,default,latin1
-set fileencoding=utf-8  " 文件保存时始终用utf-8编码
+set encoding=utf-8  " 文件保存时始终用utf-8编码
