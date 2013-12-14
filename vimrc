@@ -19,7 +19,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My bundles here:
-Bundle 'vim-scripts/UltiSnips'
+Bundle 'SirVer/ultisnips'
 
 
 "" Tab相关设置
