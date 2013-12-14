@@ -46,3 +46,7 @@ endif " has("autocmd")
 if &t_Co > 1
     syntax enable
 endif
+
+"" 支持中文编码
+"" 参考http://edyfox.codecarver.org/html/vim_fileencodings_detection.html
+set fileencodings=ucs-bom,utf-8,gb18030,default,latin1
