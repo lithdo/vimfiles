@@ -1,11 +1,10 @@
 "" 基本设置
-set nocompatible    " 不兼容vi，该指令最好放在最前面，...
-                    " 因为它的副作用可能影响其他指令。
-set showmatch       " 高亮匹配的括号
-set hlsearch        " 搜索时，高亮匹配的文本
-set incsearch       " 还在输搜索关键词时，就开始搜索
-
+set nocompatible
+set showmatch
+set hlsearch 
+set incsearch
 inoremap jk <esc>
+
 
 "" Tab相关设置
 "" 
@@ -32,6 +31,7 @@ set softtabstop=4
 set tabstop=8
 set expandtab
 
+
 "" 开启文件类型检测
 "" 参考http://easwy.com/blog/archives/advanced-vim-skills-filetype-on/。
 if has("autocmd")
@@ -42,10 +42,12 @@ else
     set autoindent      " 自动缩进
 endif " has("autocmd")
 
+
 "" 终端支持颜色时，开启语法高亮
 if &t_Co > 1
     syntax enable
 endif
+
 
 "" 支持中文编码
 "" 参考http://edyfox.codecarver.org/html/vim_fileencodings_detection.html
