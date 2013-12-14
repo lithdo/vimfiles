@@ -24,3 +24,13 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=8
 set expandtab
+
+"" 开启文件类型检测
+"" 参考http://easwy.com/blog/archives/advanced-vim-skills-filetype-on/。
+if has("autocmd")
+    filetype on         " 打开文件类型检测功能
+    filetype plugin on  " 允许加载文件类型插件
+    filetype indent on  " 允许为不同类型的文件定义缩进格式
+else
+    set autoindent      " 自动缩进
+endif " has("autocmd")
