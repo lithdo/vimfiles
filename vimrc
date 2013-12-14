@@ -2,15 +2,24 @@ inoremap jk <esc>
 
 "" Tab相关设置
 "" 
-"" shiftwidth   指定程序中自动缩进所使用的空白长度。
-"" tabstop      指定'\t'字符所等同的空格长度，一般设为8。
-"" softtabstop  一旦设置了softtabstop的值时，你按下tab键，插入的是空格和tab制表符的混合，
-""              具体如何混合取决于你设定的softtabstop。举个例子，如果设定softtabstop=8, 
-""              那么按下tab键，插入的就是正常的一个制表符;如果设定 softtabstop=16,那么插
-""              入的就是两个制表符；如果softtabstop=12,那么插入的就是一个制表符加上4个空
-""              格；如果 softtabstop=4呢？那么一开始，插入的就是4个空格，此时一旦你再按
-""              下一次tab，这次的四个空格就会和上次的四个空格组合起来变成一个制表符。
-"" expandtab    按下<Tab>键时，将制表符转换为相应个数的空格。这时，要输入制表符，用CTRL-V<Tab>。
+"" shiftwidth   
+""      指定程序中自动缩进所使用的空白长度。
+"" tabstop
+""      指定'\t'字符所等同的空格长度，一般设为8。
+"" softtabstop
+""      一旦设置了softtabstop的值时，你按下tab键，
+""      插入的是空格和tab制表符的混合，具体如何混
+""      合取决于你设定的softtabstop。举个例子，如
+""      果设定softtabstop=8, 那么按下tab键，插入
+""      的就是正常的一个制表符;如果设定 softtabstop=16,
+""      那么插入的就是两个制表符；如果softtabstop=12,
+""      那么插入的就是一个制表符加上4个空格；如果
+""      softtabstop=4呢？那么一开始，插入的就是4个
+""      空格，此时一旦你再按一次tab，这次的四个空格
+""      就会和上次的四个空格组合起来变成一个制表符。
+"" expandtab
+""      按下<Tab>键时，将制表符转换为相应个数的空格。
+""      这时，要输入制表符，用CTRL-V<Tab>。
 set shiftwidth=4
 set softtabstop=4
 set tabstop=8
