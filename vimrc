@@ -34,3 +34,8 @@ if has("autocmd")
 else
     set autoindent      " 自动缩进
 endif " has("autocmd")
+
+"" 终端支持颜色时，开启语法高亮
+if &t_Co > 1
+    syntax enable
+endif
