@@ -1,3 +1,10 @@
+"" 基本设置
+set nocompatible    " 不兼容vi，该指令最好放在最前面，...
+                    " 因为它的副作用可能影响其他指令。
+set showmatch       " 高亮匹配的括号
+set hlsearch        " 搜索时，高亮匹配的文本
+set incsearch       " 还在输搜索关键词时，就开始搜索
+
 inoremap jk <esc>
 
 "" Tab相关设置
