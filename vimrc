@@ -1,9 +1,25 @@
 "" 基本设置
-set nocompatible
 set showmatch
 set hlsearch 
 set incsearch
 inoremap jk <esc>
+
+
+"" Vundle设置
+set nocompatible              " be iMproved
+filetype off                  " required!
+
+" git clone https://github.com/gmarik/vundle.git /path/to/vundle
+" ln -s /path/to/vundle/ ~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My bundles here:
+
 
 
 "" Tab相关设置
