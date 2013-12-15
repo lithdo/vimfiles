@@ -20,6 +20,8 @@ Bundle 'gmarik/vundle'
 
 " My bundles here:
 Bundle 'SirVer/ultisnips'
+Bundle 'scrooloose/nerdtree'
+
 
 
 "" Tab相关设置
