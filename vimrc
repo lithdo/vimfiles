@@ -71,3 +71,12 @@ endif
 "" 参考http://edyfox.codecarver.org/html/vim_fileencodings_detection.html
 set fileencodings=ucs-bom,utf-8,gb18030,default,latin1
 set encoding=utf-8  " 文件保存时始终用utf-8编码
+
+
+"" <c-y>输入digraph特殊字符，原<c-k>被UltiSnips占用了
+"" 例： dr ┌
+""      vr ├
+""      ur └
+""      hh ─
+""      vv │
+inoremap <c-y> <c-k>
