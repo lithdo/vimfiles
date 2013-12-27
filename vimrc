@@ -80,3 +80,8 @@ set encoding=utf-8  " 文件保存时始终用utf-8编码
 ""      hh ─
 ""      vv │
 inoremap <c-y> <c-k>
+
+"" 使<c-x><c-o>自动补全HTML标签
+if has("autocmd")
+    autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+endif
