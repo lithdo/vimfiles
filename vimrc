@@ -81,7 +81,26 @@ set encoding=utf-8  " 文件保存时始终用utf-8编码
 ""      vv │
 inoremap <c-y> <c-k>
 
+
 "" 使<c-x><c-o>自动补全HTML标签
 if has("autocmd")
     autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 endif
+
+
+"" Vala语法高亮设置（https://wiki.gnome.org/Projects/Vala/Vim）
+" Disable valadoc syntax highlight
+"let vala_ignore_valadoc = 1
+
+" Enable comment strings
+let vala_comment_strings = 1
+
+" Highlight space errors
+let vala_space_errors = 1
+" Disable trailing space errors
+"let vala_no_trail_space_error = 1
+" Disable space-tab-space errors
+let vala_no_tab_space_error = 1
+
+" Minimum lines used for comment syncing (default 50)
+"let vala_minlines = 120
