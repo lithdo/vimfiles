@@ -9,19 +9,31 @@ inoremap jk <esc>
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-" git clone https://github.com/gmarik/vundle.git /path/to/vundle
-" ln -s /path/to/vundle/ ~/.vim/bundle/vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " My bundles here:
-Bundle 'SirVer/ultisnips'
-Bundle 'scrooloose/nerdtree'
 
+" Ultisnips
+Plugin 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+
+" NerdTree
+Plugin 'scrooloose/nerdtree'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+"
+" Brief help
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install (update) plugins
+" :PluginSearch(!) foo - search (or refresh cache first) for foo
+" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
 
 
 "" Tab相关设置
