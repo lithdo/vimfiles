@@ -34,6 +34,9 @@ Plugin 'honza/vim-snippets'
 " NerdTree
 Plugin 'scrooloose/nerdtree'
 
+" Emmet
+Plugin 'mattn/emmet-vim'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 "
